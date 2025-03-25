@@ -14,10 +14,10 @@ namespace OOPGame
         { }
     public void Update(int heroX, int heroY)
     {
-        if (heroX< this.x) { this.x-=5; }
-        if (heroY< this.y) { this.y-=5; }
-        if (heroX>this.x) { this.x+=5; }
-        if (heroY>this.y) {this.y+=5; }
+        if (heroX< this.x) { this.x-=15; }
+        if (heroY< this.y) { this.y-=15; }
+        if (heroX>this.x) { this.x+=15; }
+        if (heroY>this.y) {this.y+=15; }
 
     }
 

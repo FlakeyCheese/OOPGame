@@ -58,7 +58,23 @@ namespace OOPGame
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-
+            switch  (e.KeyCode)
+            {
+                case Keys.A:
+                    hero.Update(true, false, false, false);
+                    break;
+                case Keys.D:
+                    hero.Update(false, true, false, false);
+                    break;
+                case Keys.W:
+                    hero.Update(false, false, true, false);
+                    break;
+                case Keys.S:
+                    hero.Update(false, false, false, true);
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
