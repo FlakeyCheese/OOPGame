@@ -23,8 +23,12 @@ namespace OOPGame
         }
         
 
-        public void update()
+        public void Update(bool left, bool right, bool up, bool down)
         {
+            if (left) { this.x--; }
+            if (right) { this.x++; }
+            if (up) { this.y--; }
+            if (down) { this.y++; }
 
         }
     }
