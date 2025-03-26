@@ -19,11 +19,11 @@ namespace OOPGame
         {
             
             InitializeComponent();
-            hero = new Player(20, 20, Resources.hero, 80, 80, 100, 5);
+            hero = new Player(20, 20, Resources.hero, 80, 80, 100, 10);
             Random rnd = new Random();
             for (int i = 0; i < 10; i++)
             {
-                Zombie tempZombie = new Zombie(this.Width - 100, rnd.Next(10, this.Height - 100), Resources.blob, 40, 40, 20, 5);
+                Zombie tempZombie = new Zombie(this.Width - 100, rnd.Next(10, this.Height - 100), Resources.blob, 40, 40, 20, 15);
                 zombies.Add(tempZombie);
             }
         }

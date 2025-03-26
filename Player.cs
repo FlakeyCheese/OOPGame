@@ -21,15 +21,18 @@ namespace OOPGame
             speed = newSpeed;
 
         }
-        
+        public void Animate()
+        {
+            // call this to give the correct animation for the player
+        }
 
         public void Update(bool left, bool right, bool up, bool down)
         {
-            if (left) { this.x-=5; }
-            if (right) { this.x+=5; }
-            if (up) { this.y-=5; }
-            if (down) { this.y+=5; }
-
+            if (left) { this.x-=speed; }
+            if (right) { this.x+=speed; }
+            if (up) { this.y-=speed; }
+            if (down) { this.y+=speed; }
+            // we could check for collisions in this method
         }
     }
 }

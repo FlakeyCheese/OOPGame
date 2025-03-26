@@ -11,13 +11,20 @@ namespace OOPGame
     {
         public Zombie(int newX, int newY, Image newImage, int imgHeight, int imgWidth, int hitPoints, int newSpeed)
             : base(newX, newY, newImage, imgHeight, imgWidth, hitPoints, newSpeed)
-        { }
-    public void Update(int heroX, int heroY)
+        {
+        //nothing new to do in this constructor
+        }
+
+     public void Animate()
+     {
+            // call this to give the correct animation for the player
+     }
+        public void Update(int playerX, int playerY)
     {
-        if (heroX< this.x) { this.x-=15; }
-        if (heroY< this.y) { this.y-=15; }
-        if (heroX>this.x) { this.x+=15; }
-        if (heroY>this.y) {this.y+=15; }
+        if (playerX< this.x) { this.x-=speed; }
+        if (playerY< this.y) { this.y-=speed; }
+        if (playerX>this.x) { this.x+=speed; }
+        if (playerY>this.y) {this.y+=speed; }
 
     }
 

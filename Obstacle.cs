@@ -25,14 +25,10 @@ namespace OOPGame
             this.height = imgHeight;
             bounds = new Rectangle(x, y, width, height);
         }
-        public Rectangle GetBounds()
-            {
-            return bounds;
-            }
+        public Rectangle getBounds()
+        {return bounds;}
         public Image getImage()
-        {
-            return image;
-        }
+        {return image;}
         public int getX()
         { return x; }
         public int getY()
